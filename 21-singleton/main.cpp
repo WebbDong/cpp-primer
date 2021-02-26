@@ -1,6 +1,8 @@
 #include "EarlySingleton.h"
 #include "LazilySingleton.h"
 
+#include <iostream>
+
 /**
  * 单例模式
  * @return
@@ -8,6 +10,8 @@
 int main() {
     dwb::EarlySingleton* instance1 = dwb::EarlySingleton::getInstance();
     instance1->func();
+
+    std::cout << "--------------------------------" << std::endl;
 
     dwb::LazilySingleton* instance2 = dwb::LazilySingleton::getInstance();
     instance2->func();

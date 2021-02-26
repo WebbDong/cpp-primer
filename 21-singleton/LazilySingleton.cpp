@@ -9,7 +9,9 @@ namespace dwb {
 
     LazilySingleton* LazilySingleton::instance = NULL;
 
-    LazilySingleton::LazilySingleton() {}
+    LazilySingleton::LazilySingleton() {
+        std::cout << "LazilySingleton::LazilySingleton()" << std::endl;
+    }
 
     LazilySingleton::~LazilySingleton() {
         std::cout << "LazilySingleton::~LazilySingleton()" << std::endl;

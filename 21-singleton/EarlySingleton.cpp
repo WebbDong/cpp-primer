@@ -9,7 +9,9 @@ namespace dwb {
 
     EarlySingleton EarlySingleton::instance;
 
-    EarlySingleton::EarlySingleton() {}
+    EarlySingleton::EarlySingleton() {
+        std::cout << "EarlySingleton::EarlySingleton()" << std::endl;
+    }
 
     EarlySingleton::EarlySingleton(const EarlySingleton& instance) {}
 
