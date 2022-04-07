@@ -33,7 +33,5 @@ int main() {
     //test(10);
     test(10.0);
     test(10L);
-
-    void testString()
     return 0;
 }
